@@ -1,0 +1,76 @@
+.workPhoto {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    &:hover{
+        .imgInfo{
+            opacity: 1;
+        }
+    }
+}
+
+.imgInfo {
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in 0.3s;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #2c98f0;
+
+    .content {
+        padding: 20px;
+        position: relative;
+        height: 300px;
+
+        h3 {
+            font-family: Quicksand, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform .3s, opacity .3s, -webkit-transform .3s;
+            margin-bottom: 15px;
+
+            a {
+                color: #fff;
+
+
+
+            }
+        }
+
+        span {
+            color: #ffffffb3;
+            font-size: 15px;
+            transition: transform .3s, opacity .3s, -webkit-transform .3s;
+        }
+
+        p.icon {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+
+            span {
+                padding-right: 5px;
+                color: #ffffffb3;
+                font-size: 15px;
+
+                a {
+                    color: #333;
+                    padding: 5px;
+                    background: #ffffff80;
+                    border-radius: 4px;
+                
+            }
+        }
+    }
+}
+}

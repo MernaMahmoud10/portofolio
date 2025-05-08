@@ -1,0 +1,418 @@
+.myContainer {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+
+    @media screen and (max-width :800px) {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        padding-top: 15% !important;
+    }
+
+    .containerTitle {
+        margin-bottom: 15px;
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: 99;
+        font-weight: 500;
+        letter-spacing: 5px;
+        font-family: Quicksand, Arial, sans-serif;
+
+    }
+
+    .containerHeading {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 1.8;
+        position: relative;
+        margin: 0 0 30px;
+        color: #000;
+        font-family: Playfair Display, Georgia, serif;
+
+        @media screen and (max-width :800px) {
+            font-size: 18px !important;
+
+        }
+    }
+
+    .containerText {
+        margin-bottom: 1.5em;
+        font-family: Quicksand, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.8;
+        color: #000000b3;
+
+        @media screen and (max-width :800px) {
+            font-size: 15px !important;
+
+        }
+    }
+
+}
+
+.navDiv {
+transition: all 0.3s ease-in;
+    @media screen and (max-width :800px) {
+        position: fixed;
+        z-index: 999;
+
+    }
+}
+
+
+
+.navIcon {
+    position: fixed;
+    z-index: 9;
+}
+
+a.nav-link {
+
+    text-decoration: none;
+    transition: .3s;
+    color: #000000b3;
+    position: relative;
+    font-family: Quicksand, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    &.active {
+        color: #2c98f0;
+    }
+}
+
+a.nav-link:hover::after {
+    content: "" !important;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #2c98f0;
+    transition: width .3s ease-out;
+}
+
+.carousel-item .slider {
+background-size: cover;
+background-position: bottom center;
+
+}
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    @media screen and (max-width :800px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0%;
+        right: 0%;
+
+    }
+
+
+    h1 {
+        font-family: Playfair Display, Georgia, serif;
+        font-size: 70px !important;
+        font-weight: 700;
+        font-family: Playfair Display, Georgia, serif;
+        font-size: 60px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width :800px) {
+            font-size: 50px !important;
+            text-align: center;
+        }
+
+    }
+
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        font-weight: 300;
+        font-family: Quicksand, Arial, sans-serif;
+        color: #000;
+        font-size: 20px;
+
+        @media screen and (max-width :800px) {
+            font-size: 16px !important;
+
+        }
+
+        span {
+            color: #2c98f0;
+            text-decoration: underline;
+        }
+
+
+
+    }
+
+    button {
+        color: #000;
+        border: 1px solid #000;
+        background: transparent !important;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 12px 20px !important;
+        font-weight: 400;
+        width: fit-content;
+        border-radius: 0;
+        font-family: Quicksand, Arial, sans-serif;
+        cursor: pointer;
+    }
+}
+
+#skills {
+    .progress {
+        height: 6px;
+        z-index: 00;
+        overflow: visible;
+
+        .progress-bar {
+            position: relative;
+            overflow: visible;
+
+            &.photoShopProgress {
+                width: 75%;
+                background-color: #2c98f0 !important;
+
+                &::before {
+                    content: '75%';
+                    position: absolute;
+                    bottom: 100%;
+                    right: 0%;
+                    color: #2c98f0;
+                    z-index: 99;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: 0px;
+                    background-color: #2c98f0;
+                    z-index: 99;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+            }
+
+            &.jQueryProgress {
+                width: 60%;
+
+                &::before {
+                    content: '60%';
+                    position: absolute;
+                    bottom: 100%;
+                    right: 0%;
+                    color: #ec5453;
+                    z-index: 99;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: 0px;
+                    background-color: #ec5453;
+                    z-index: 99;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+            }
+
+            &.htmlprogress {
+                width: 85%;
+
+                &::before {
+                    content: '85%';
+                    position: absolute;
+                    bottom: 100%;
+                    right: 0%;
+                    color: #f9bf3f;
+                    z-index: 99;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: 0px;
+                    background-color: #f9bf3f;
+                    z-index: 99;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+            }
+
+
+            &.cssProgress {
+                width: 90%;
+                background-color: #a84cb8 !important;
+
+                &::before {
+                    content: '90%';
+                    position: absolute;
+                    bottom: 100%;
+                    right: 0%;
+                    color: #a84cb8;
+                    z-index: 99;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: 0px;
+                    background-color: #a84cb8;
+                    z-index: 99;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+            }
+
+
+            &.WordPressProgress {
+                width: 70%;
+                background-color: #2fa499 !important;
+
+                &::before {
+                    content: '70%';
+                    position: absolute;
+                    bottom: 100%;
+                    right: 0%;
+                    color: #2fa499;
+                    z-index: 99;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: 0px;
+                    background-color: #2fa499;
+                    z-index: 99;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+            }
+
+
+            &.SEOProgress {
+                width: 80%;
+                background-color: #4054b2 !important;
+
+                &::before {
+                    content: '80%';
+                    position: absolute;
+                    bottom: 100%;
+                    right: 0%;
+                    color: #4054b2;
+                    z-index: 99;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: 0px;
+                    background-color: #4054b2;
+                    z-index: 99;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+
+                }
+            }
+
+
+
+
+        }
+    }
+
+}
+
+.clr {
+    clear: both;
+}
+
+#work {
+    ul .nav-link {
+        color: #000 !important;
+        text-transform: none !important;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+
+        &.active {
+            color: #2c98f0 !important;
+        }
+    }
+}
