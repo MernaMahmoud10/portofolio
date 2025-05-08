@@ -14,10 +14,10 @@ export default function Layout() {
 
             </div>
             <div className='w-100 row gx-0'>
-                <div className={`navDiv bg-light col-sm-12 col-md-2  vh-100 ${isNavOpened ? `d-sm-none d-md-block` : `d-none d-sm-block d-md-block`}`}>
+                <div className={`navDiv position-fixed top-0 start-0 end-0 bg-light col-sm-12 col-md-2  vh-100 ${isNavOpened ? `d-sm-none d-md-block` : `d-none d-sm-block d-md-block`}`}>
                     <SideBar isNavOpened={isNavOpened} setIsNavOpened={setIsNavOpened} />
                 </div>
-                <div className={`col-md-10 ${isNavOpened ? `vh-100` : ``}`}>
+                <div className={`position-absolute end-0 top-0 col-md-10 position-relative ${isNavOpened ? `vh-100` : ``}`}>
                     <Outlet></Outlet>
                 </div>
             </div>
